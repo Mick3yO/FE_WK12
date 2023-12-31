@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title -->
+    <title>Staffing Agency CRUD</title>
+    <!-- Bootstrap CSS for styling -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body>
+  <!-- Main content container -->
+  <div class="container mt-4">
+    <!-- Page heading -->
+    <h2>Staffing Agency CRUD</h2>
+
+    <!-- Form for adding new job applicant -->
+    <form id="applicantForm">
+      <!-- Input for applicant name -->
+      <div class="form-group">
+        <label for="applicantName">Applicant Name:</label>
+        <input type="text" class="form-control" id="applicantName" required>
+      </div>
+      <!-- Input for applicant position -->
+      <div class="form-group">
+        <label for="applicantPosition">Position:</label>
+        <input type="text" class="form-control" id="applicantPosition" required>
+      </div>
+      <!-- Button to submit the form and add a new applicant -->
+      <button type="submit" class="btn btn-primary">Add Applicant</button>
+    </form>
+
+    <!-- Display job applicants -->
+    <ul id="applicantList" class="list-group mt-3"></ul>
+  </div>
+
+  <!-- JavaScript dependencie,jQuery and Bootstrap -->
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- main js -->
+  <script src="index.js"></script>
+</body>
+</html>
